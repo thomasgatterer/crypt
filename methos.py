@@ -8,12 +8,11 @@
 
 ## https://pythontutor.com/render.html#mode=display
 
-
 import string
 
-plaintext = "ABCD"
-shift = "D"
-alphabet = string.ascii_lowercase+string.ascii_uppercase
+letter = "D"
+key = "D"
+alphabet = string.ascii_uppercase
 
 ##shiftNumber = 3
 ##print(alphabet[shiftNumber:])
@@ -21,7 +20,15 @@ alphabet = string.ascii_lowercase+string.ascii_uppercase
 
 ##print(alphabet.index("D"))
 
+##print(alphabet[alphabet.index(shift):])
 
-shifted_alphabet = alphabet[alphabet.index(shift):] + alphabet[:alphabet.index(shift)]
+
+##caesarCryptLetter
+shifted_alphabet = alphabet[alphabet.index(key):] + alphabet[:alphabet.index(key)]
 table = str.maketrans(alphabet, shifted_alphabet)
-print(plaintext.translate(table))
+print(letter.translate(table))
+
+
+##caesarDecryptLetter
+table = str.maketrans(shifted_alphabet, alphabet)
+print(letter.translate(table))
