@@ -51,8 +51,8 @@ def test_starting_out_tg():
  #   assert inCapitals('CaesarrauchteeineCigaretteundCiceroeineCigarre') == 'CAESARRAUCHTEEINECIGARETTEUNDCICEROEINECIGARRE'
     assert caesarCryptLetter('A', 'D') == 'D'
     assert caesarCryptLetter('U','X') == 'R'
-    assert caesarDecryptLetter('D','A') == 'D'
-    assert caesarDecryptLetter('X','U') == 'D'
+    assert caesarDecryptLetter('D','D') == 'A'
+    assert caesarDecryptLetter('R','X') == 'U'
 
     """ HowTo: Ausführen mit pytest Dateiname.py """
 

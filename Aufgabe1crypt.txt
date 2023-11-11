@@ -1,15 +1,15 @@
   def caesarCryptLetter(letter, key):
   """ Verschluesselt den Buchstaben letter mit dem Schluessel key
   """ mittels der Caesarverschluesselung
-  >>>caesarCryptLetter('A','D')
+  >>>caesarCryptLetter('A','D') #hier könnte man sich überlegen ob ('B','D') besser wäre, da unten dann nicht D doppelt kommt
   'D'
   >>>caesarCryptLetter('U','X')
-  'U'
+  'R'
 
   def caesarDecryptLetter(letter, key):
   """ Verschluesselt den Buchstaben letter mit dem Schluessel key
   """ mittels der Caesarverschluesselung
-  >>>caesarCryptLetter('D','A')
-  'D'
-  >>>caesarCryptLetter('X','U')
+  >>>caesarDecryptLetter('D','D')
+  'A'
+  >>>caesarDecryptLetter('R','U')
   'U'
