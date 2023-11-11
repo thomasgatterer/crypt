@@ -1,0 +1,15 @@
+  def caesarCryptLetter(letter, key):
+  """ Verschluesselt den Buchstaben letter mit dem Schluessel key
+  """ mittels der Caesarverschluesselung
+  >>>caesarCryptLetter('A','D')
+  'D'
+  >>>caesarCryptLetter('U','X')
+  'U'
+
+  def caesarDecryptLetter(letter, key):
+  """ Verschluesselt den Buchstaben letter mit dem Schluessel key
+  """ mittels der Caesarverschluesselung
+  >>>caesarCryptLetter('D','A')
+  'D'
+  >>>caesarCryptLetter('X','U')
+  'U'
